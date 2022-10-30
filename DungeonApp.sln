@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dungeon", "Dungeon\Dungeon.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DungeonLibrary", "DungeonLibrary\DungeonLibrary.csproj", "{3F96744C-4AC5-4B90-A8A3-E84BC111DA75}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonsterLibrary", "MonsterLibrary\MonsterLibrary.csproj", "{0B7FC888-CE53-415D-93CD-A72AD3E45DA6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MonsterLibrary", "MonsterLibrary\MonsterLibrary.csproj", "{0B7FC888-CE53-415D-93CD-A72AD3E45DA6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

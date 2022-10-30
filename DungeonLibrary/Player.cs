@@ -9,7 +9,7 @@ namespace DungeonLibrary
     public sealed class Player : Character 
     {
         private Race _characterRace;
-        //prop
+        
         public Race CharacterRace
         {
             get { return _characterRace; }
@@ -45,7 +45,20 @@ namespace DungeonLibrary
                     Life += 5;
                     Block += 5;
                     break;
-            }            
+                case Race.Nord:
+                    Life += 2;
+                    Block += 10;
+                    HitChance += 10;
+                    break;
+                case Race.AshenWarrior:
+                    MaxLife += 20;
+                    Life += 20;
+                    HitChance += 15;
+                    break;
+
+
+
+            }
         }
         public override string ToString()
         {
@@ -63,6 +76,9 @@ namespace DungeonLibrary
                     break;
                 case Race.Dwarf:
                     description = "Dwarf";
+                    break;
+                case Race.Nord:
+                    description = "Nord";
                     break;
                 default:
                     break;
