@@ -1,6 +1,6 @@
 ﻿using DungeonLibrary;
 using MonsterLibrary;
-using System.Media;//Added for play music
+
 
 namespace Dungeon
 {
@@ -13,7 +13,7 @@ namespace Dungeon
 
             Weapon sword = new Weapon(8, 1, "Long Sword", 10, false, WeaponType.Sword);
 
-            Console.Write("Hello traveler what art thou called? ");
+            Console.Write("Hello traveler what art thou called?\n ");
             string userName = Console.ReadLine();           
             var races = Enum.GetValues(typeof(Race));
             int index = 1;
@@ -28,7 +28,7 @@ namespace Dungeon
             Console.WriteLine(userRace);            
             Player player = new Player(userName, 70, 5, 40, 40, userRace, sword);
             Console.Clear();
-            Console.WriteLine($"Welcome {player.Name}, your journey begins!");
+            Console.WriteLine($"Welcome {player.Name}, your journey begins! There are 10 Monsters in this dungeon defeat all and you will be rewarded with freedom!");
             bool exit = false; 
 
             do
@@ -37,7 +37,7 @@ namespace Dungeon
                 Console.WriteLine(room);               
                 Monster monster = Monster.GetMonster();
 
-                Console.WriteLine("In this room... " + monster.Name);
+                Console.WriteLine("In this room... \n\n" + monster.Name );
 
                 bool reload = false;
                 do
@@ -71,6 +71,13 @@ namespace Dungeon
                                 Console.WriteLine("You are Just T\a");
                                 exit = true;
                             }
+                            if (score == 10)
+                            {
+                                Console.WriteLine("\n\nYou Won! Congrats Now please go outside and touch some grass, you deserved it");
+                                exit = true;
+                            }
+
+                                
                             break;
                         case "R":
                             Console.WriteLine("Run away!");
@@ -101,6 +108,9 @@ namespace Dungeon
                         default:
                             Console.WriteLine("Try Again");
                             break;
+
+                        
+                            
                     }
 
                 } while (!exit && !reload);

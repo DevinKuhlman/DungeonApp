@@ -6,14 +6,10 @@ using System.Threading.Tasks;
 
 namespace DungeonLibrary
 {
-    public enum Race
-    {      
-        Orc,  
-        Human,
-        Elf,  
-        Dwarf,
-        Nord,
-        AshenWarrior,
-
+    public class Score
+    {
+     
+       
+        
     }
 }

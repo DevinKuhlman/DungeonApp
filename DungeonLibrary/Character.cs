@@ -47,11 +47,7 @@
             Block = block;
             MaxLife = maxLife;
             Life = life;
-        }       
-        public Character()
-        {
-
-        }        
+        }              
         public override string ToString()
         {
             return string.Format("----- {0} -----\n" +

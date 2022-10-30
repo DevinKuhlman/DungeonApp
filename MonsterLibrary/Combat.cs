@@ -23,7 +23,7 @@ namespace MonsterLibrary
 
                 
                 Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine($"{attacker.Name} hit {defender.Name} for {damageDealt} damage!");
+                Console.WriteLine($"{attacker.Name} hit {defender.Name} for {damageDealt} damage");
                 Console.ResetColor();
             }
             else
